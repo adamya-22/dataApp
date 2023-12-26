@@ -12,6 +12,9 @@
         display: block;
         text-align: center;
     }
+    .sidebar_menu a{
+        color: darkblue;
+    }
     .logout {
             display: flex;
             justify-content: center;

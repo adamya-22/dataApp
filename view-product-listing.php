@@ -84,8 +84,8 @@ if (isset($_POST['logout'])) {
                     while($row = mysqli_fetch_assoc($result)) {
                     ?>
                     <tr>
-                        <td><img src="uploads/<?php echo $row['image'];?>" alt="" style="height: 100px;width: 100px;"></td>
-                        <td><?php echo $row['prodname'];?></td>
+                        <td><a title="View User" href="view-listing-view.php?uniqueid=<?php echo $row['uniqueid'] ?>"><img src="uploads/<?php echo $row['image'];?>" alt="" style="height: 100px;width: 100px;"></td>
+                        <td><?php echo $row['prodname'];?></td></a>
                         <td><?php echo $row['Sprice'];?></td>
                         <td><?php echo $row['weight'];?></td>
                         <td><?php echo $row['prodsku'];?></td>

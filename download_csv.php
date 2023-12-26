@@ -31,7 +31,7 @@ $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
 // Generate CSV content
 $csvContent = "Product Name,Quantity,Old Price,New Price,Description,Metatags,Main Category,Sub Category,Dimensions,Weight,Main Color,Sub Color,Image 1,Image 2,Image 3,Image 4,Unique ID,Product SKU\n";
 foreach ($data as $row) {
-    $csvContent .= "{$row['prodname']},{$row['quantity']},{$row['oldprice']},{$row['newprice']},{$row['descr']},{$row['metatags']},{$row['maincat']},{$row['subcat']},{$row['dimen']},{$row['weight']},{$row['maincol']},{$row['subcol']},{$row['image']},{$row['image2']},{$row['image3']},{$row['image4']},{$row['uniqueid']},{$row['prodsku']}\n";
+    $csvContent .= "{$row['prodname']},{$row['quantity']},{$row['Cprice']},{$row['Sprice']},{$row['descr']},{$row['metatags']},{$row['maincat']},{$row['variant']},{$row['size']},{$row['weight']},{$row['image']},{$row['image2']},{$row['image3']},{$row['image4']},{$row['uniqueid']},{$row['prodsku']}\n";
 }
 
 // Set headers for download
